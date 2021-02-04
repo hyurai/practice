@@ -1,24 +1,34 @@
 <?php 
 
-class Number{
+class Human{
 
- public function addNumbers1($a,$b,$c,$d,$e){
-     echo $a + $b + $c + $d + $e;
+ public $age;
+ public $name; 
+
+ public function SelfBaseIntroduction(){
+   echo $this->name.'は'.$this->age.'です';
  }
 }
-class deleteNumber{
-  public static function addNumber2($f,$g,$h,$i,$j){
-  echo self.$f + $g + $h + $i + $j;
-  self::addNumber2(20,5,4,3,2);
-}
+
+class Introduction{
+  public static function hobby(){
+    echo '私の趣味はテレビゲームです';
+
+  }
 
 }
 
-$plusnumber =  new Number();
-$plusnumber.addNumbers(1,2,3,4,5)
-//インスタンスメソッドこちらは一回メソッドをインスタンス化してメソッドを呼び出すことができる
 
-//クラスメソッドこちらはクラスから直接メソッドを呼び出すことができる。その分クラス内のメソッドにselfを付ける必要がある
+$nagai = new Human;
+//Humanクラスのインスタンス化
 
+$nagai->name = "nagai";
+//インスタンス化した物のnameというプロパティに'nagai'を代入する
+$nagai->age = 19;
+//インスタンス化した物のageというプロパティに19を代入する
+$nagai->SelfBaseIntroduction();
+//インスタンスメソッドを呼び出す
 
+echo Introduction::hobby();
+//このようにインスタンスしないで直接クラス内のメソッドを呼び出すことをクラスメソッド
 ?>
