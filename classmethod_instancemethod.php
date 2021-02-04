@@ -2,6 +2,7 @@
 
 class Human{
 
+
  public $age;
  public $name; 
 
@@ -31,4 +32,7 @@ $nagai->SelfBaseIntroduction();
 
 echo Introduction::hobby();
 //このようにインスタンスしないで直接クラス内のメソッドを呼び出すことをクラスメソッド
+
+
+
 ?>
