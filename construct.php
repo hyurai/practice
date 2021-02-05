@@ -24,5 +24,4 @@ $human = new Human;
 
 
 
-
 ?>
