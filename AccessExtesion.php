@@ -15,7 +15,7 @@ class AccessExtension{
     }
     public function gao($height){
         $this->height = $height;
-        echo '私の身長は'.$height;
+        echo '私の身長は'.$height.'です';
     }
 }
 
