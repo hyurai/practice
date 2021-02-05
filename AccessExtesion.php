@@ -5,8 +5,9 @@ class AccessExtension{
     protected $age = "";
     public $height = "";
 
-    private function __construct(){
-        echo $this->name.'さん！おはよう';
+    private function __construct($name){
+        $this->name = $name;
+        return $this->name.'さん！おはよう';
         
     }
     protected function say($age){
