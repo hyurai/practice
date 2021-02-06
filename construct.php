@@ -8,19 +8,19 @@ public function __construct(){
  
 }
 
-public function hellomale(){
-
-echo '私は男です';
-}
-
 public function __destruct(){
-    echo '私は女です';    
-   
-   
+    echo '私は最後の呼ばれる';    
+} 
+public function helloman(){
+    echo '私は男です';
+    }  
 }
-   
-}
-$human = new Human;
+
+$taro =  new Human;
+$taro->helloman();
+echo '私は女性です';
+
+
 
 
 
