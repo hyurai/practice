@@ -7,7 +7,7 @@ class Human{
 
  }
  public function hellowoman(){
-    echo '私は女だ';
+    echo '私は女性だ';
  }
 
 
