@@ -1,15 +1,15 @@
 <?php
 //課題番号14
-require_once('child.php');
-require_once('child2.php');
+require_once('man.php');
+require_once('male.php');
 
 class Human{
     //Manクラスの親クラス
-    protected $name = '人間';
-    protected $muscle = '普通';
-    protected $hair = 'medium';
+    protected $name = '';
+    protected $muscle = '';
+    protected $hair = '';
     protected $praisename = '';
-     public function selfInroduction($name,$muscle,$hair){
+     public function selfIntroduction($name,$muscle,$hair){
          $this->name = $name;
          $this->muscle = $muscle;
          $this->hair = $hair;
