@@ -7,14 +7,14 @@ class AllNumber{
 
 }
 
-class selectNumber extends AllNumber{
+class updateNumber extends AllNumber{
     public function __construct(){
-        $oddNubmer = $number % 2 == 1;
-        echo $oddNubmer;
+        $number = 2;
+        echo $number;
     }
 }
 
-$echoNumber = new selectNumber();
+$echoNumber = new updateNumber();
 
 
 
