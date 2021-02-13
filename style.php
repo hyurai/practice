@@ -3,6 +3,14 @@
 $os = array('Windouws','macOS','Linux');
 //arrayは値が配列でないといけない
 echo $os[0].'は使っていません';
+//連想配列
+$test = arraY(
+    '国語' => 80,
+    '数学' => 70,
+    '英語' => 80,
+);
+//
+echo $test["国語"];
 //String型文字列
 $string = 'macOSを使っています';
 echo $string;
