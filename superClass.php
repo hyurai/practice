@@ -1,27 +1,31 @@
 <?php 
 class AllNumber{
-    public $number = 1;
-    public function randnumber(){
-        $number = 1;
-        echo $number;
+    protected $number = "";
+    public function __construct(int $number)
+    {
+        $this->numberw = $number;        
     }
+    public function randnumber(){
+
+        echo('今から数字を出力する'.$this->number.'当てることが出来たかな?');
+    }
+
 
 }
 
 class updateNumber extends AllNumber{
-    public function __construct(){
-        $number = 2;
-        echo $number;
-        //オーバーライド = 継承してクラスでデータを更新すること
+    public function randnumber()
+    {
+        $Seque = round($this->number * $this->number);
+        echo('こちらが上書きする前の数字です'.$this->number.'こちらが上書きした数字です'.$Seque);
     }
 }
 
-$echoAllNumber = new AllNumber();
+$echoAllNumber = new AllNumber(44);
 $echoAllNumber->randnumber();
-//スーパークラスの呼び出し
-$echoUpdateNumber = new updateNumber();
-//子クラスの呼び出し
 
+$echoUpdateNumber = new updateNumber(10);
+$echoUpdateNumber->randnumber();
 
 
 
